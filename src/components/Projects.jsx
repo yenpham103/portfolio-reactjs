@@ -10,7 +10,7 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
         className="text-4xl my-20 text-center"
       >
-        Projects
+        Personal Projects
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
@@ -22,8 +22,8 @@ const Projects = () => {
               className="w-full lg:w-1/4"
             >
               <img
-                width={150}
-                height={150}
+                width={180}
+                height={180}
                 src={project.image}
                 alt={project.title}
                 className="mb-6 rounded"
@@ -35,8 +35,12 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
+              <a href={project.url} className="mb-2 font-semibold border-b">
+                {project.title}
+              </a>
+              <p className="mb-4 mt-2 text-neutral-400">
+                {project.description}
+              </p>
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
