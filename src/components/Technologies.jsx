@@ -1,12 +1,9 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { RiNodejsFill } from "react-icons/ri";
 import { TbBrandRedux } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { motion } from "framer-motion";
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -84,30 +81,6 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <TbBrandNextjs className="text-7xl " />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiNodejsFill className="text-7xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMongodb className="text-7xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
         </motion.div>
       </motion.div>
     </div>
